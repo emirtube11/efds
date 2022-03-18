@@ -3,10 +3,19 @@ wait(0)
    local Window = Library.CreateLib("EmirHUB", "Synapse")
 
 
-   
+local p1 = game.Players.LocalPlayer.Character.HumanoidRootPart
+local p3 = game.Players.LocalPlayer.Character.Humanoid
+local s1 = "Treasure1"
+local s2 = "Treasure2"
+local s3 = "Treasure3"
+local s4 = "Treasure4"
+local s5 = "Treasure5"
+local pos = p1.CFrame
 
 --PrisonLife
    local Prison = Window:NewTab("Animal Similator")
+   local treasure = Window:NewTab("Sandik Bul")
+   local teasSection = treasure:NewSection("Auto Farm")
    local PrisonSection = Prison:NewSection("Auto Farm")
    local BossSection = Prison:NewSection("Bosslar")
    PrisonSection:NewButton("Treasure1", "Guns", function()
@@ -80,6 +89,36 @@ Event:FireServer(A_1, A_2)
 
 end)
 
-   BossSection:NewButton("infinite Yield Yukle", "Gate", function()
+   BossSection:NewButton("infinite Yield Yukle", "Inf", function()
 loadstring(game:HttpGet"https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source")()
+end)
+
+teasSection:NewButton("Sandik 1", "Sandik", function()
+p1.CFrame = game.Workspace.Treasures[s1].CFrame
+wait(0.2)
+p3.Jump = true
+end)
+
+teasSection:NewButton("Sandik 2", "Sandik", function()
+p1.CFrame = game.Workspace.Treasures[s2].CFrame
+wait(0.2)
+p3.Jump = true
+end)
+
+teasSection:NewButton("Sandik 3", "Sandik", function()
+p1.CFrame = game.Workspace.Treasures[s3].CFrame
+wait(0.2)
+p3.Jump = true
+end)
+
+teasSection:NewButton("Sandik 4", "Sandik", function()
+p1.CFrame = game.Workspace.Treasures[s4].CFrame
+wait(0.2)
+p3.Jump = true
+end)
+
+teasSection:NewButton("Sandik 5", "Sandik", function()
+p1.CFrame = game.Workspace.Treasures[s5].CFrame
+wait(0.2)
+p3.Jump = true
 end)
