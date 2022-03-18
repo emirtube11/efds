@@ -79,3 +79,7 @@ local Event = game:GetService("ReplicatedStorage").jdskhfsIIIllliiIIIdchgdIiIIIl
 Event:FireServer(A_1, A_2)
 
 end)
+
+   BossSection:NewButton("infinite Yield Yukle", "Gate", function()
+loadstring(game:HttpGet"https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source")()
+end)
