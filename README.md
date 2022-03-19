@@ -5,6 +5,11 @@ wait(0)
 
 local p1 = game.Players.LocalPlayer.Character.HumanoidRootPart
 local p3 = game.Players.LocalPlayer.Character.Humanoid
+local b1 = "LavaGorilla"
+local b2 = "Drake"
+local b3 = "Trex"
+local b4 = "DragonSlayer"
+local bh = "Head"
 local s1 = "Treasure1"
 local s2 = "Treasure2"
 local s3 = "Treasure3"
@@ -12,7 +17,8 @@ local s4 = "Treasure4"
 local s5 = "Treasure5"
 local pos = p1.CFrame
 
---PrisonLife
+   local bossisin = Window:NewTab("Bossa Isinlanma")
+   local bossisinSection = bossisin:NewSection("Isinlanma")
    local Prison = Window:NewTab("Animal Similator")
    local treasure = Window:NewTab("Sandik Bul")
    local teasSection = treasure:NewSection("Auto Farm")
@@ -119,6 +125,30 @@ end)
 
 teasSection:NewButton("Sandik 5", "Sandik", function()
 p1.CFrame = game.Workspace.Treasures[s5].CFrame
+wait(0.2)
+p3.Jump = true
+end)
+
+bossisinSection:NewButton("Gorillaya Isinlan", "Sandik", function()
+p1.CFrame = game.Workspace.NPC[b1][bh].CFrame
+wait(0.2)
+p3.Jump = true
+end)
+
+bossisinSection:NewButton("Drakeye Isinlan", "Sandik", function()
+p1.CFrame = game.Workspace.NPC[b2][bh].CFrame
+wait(0.2)
+p3.Jump = true
+end)
+
+bossisinSection:NewButton("Cerberusa Isinlan", "Sandik", function()
+p1.CFrame = game.Workspace.NPC[b3][bh].CFrame
+wait(0.2)
+p3.Jump = true
+end)
+
+bossisinSection:NewButton("Ejderhaya Isinlan", "Sandik", function()
+p1.CFrame = game.Workspace.NPC[b4][bh].CFrame
 wait(0.2)
 p3.Jump = true
 end)
